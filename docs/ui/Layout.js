@@ -7,8 +7,8 @@ import Footer from './Footer'
 export default ({
   title = 'TACHYONS - Css Toolkit',
   className = '',
+  skipHeader,
   skipFooter,
-  fixed,
   children
 }) => (
   <div className="w-100 sans-serif">
@@ -16,7 +16,7 @@ export default ({
     <link rel="stylesheet" href="https://file-bglcsbsfyd.now.sh/" />
     <link rel="stylesheet" href="https://file-zlngimivyb.now.sh" />
 
-    <Header version={version} fixed={fixed} />
+    {skipHeader ? null : <Header version={version} />}
     <main className={className} children={children} />
     {skipFooter ? null : <Footer />}
   </div>
