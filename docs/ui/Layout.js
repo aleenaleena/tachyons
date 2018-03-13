@@ -18,6 +18,6 @@ export default ({
 
     <Header version={version} fixed={fixed} />
     <main className={className} children={children} />
-  {skipFooter ? null : <Footer />}
+    {skipFooter ? null : <Footer />}
   </div>
 )
