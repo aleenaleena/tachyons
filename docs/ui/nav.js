@@ -293,9 +293,9 @@ export const header = [
     href: '/components/'
   },
   {
-    title: 'Gallery of sites built with Tachyons',
-    label: 'Gallery',
-    href: '/gallery'
+    title: 'Reference',
+    label: 'Reference',
+    href: '/reference'
   },
   {
     title: 'Tachyons on GitHub',
@@ -317,6 +317,11 @@ export const footer = [
     title: 'Components',
     label: 'Components',
     href: '/components/'
+  },
+  {
+    title: 'Reference',
+    label: 'Reference',
+    href: '/reference'
   },
   {
     title: 'Blog',
