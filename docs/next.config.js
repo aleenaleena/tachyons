@@ -5,6 +5,11 @@ module.exports = {
       use: [defaultLoaders.babel, '@compositor/markdown-loader']
     })
 
+    config.module.rules.push({
+      test: /\.html$/,
+      use: 'raw-loader'
+    })
+
     return config
   }
 }
